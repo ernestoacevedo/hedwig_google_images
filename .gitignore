@@ -22,3 +22,5 @@ erl_crash.dump
 # Ignore package tarball (built via "mix hex.build").
 hedwig_google_images-*.tar
 
+/.elixir_ls/
+
