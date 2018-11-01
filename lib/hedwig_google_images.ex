@@ -2,8 +2,12 @@ defmodule Hedwig.Responders.GoogleImages do
   use Hedwig.Responder
   require Logger
 
+  @moduledoc """
+  Uses Google Custom Search Engine to fetch images requested by the user.
+  """
+
   @usage """
-  hedwig image|img me <query> - Responds with a random video from the top 15 results
+  hedwig image|img me <query> - Responds with a random image of the specified search term
   """
   respond ~r/(?:image|img)(?: me)?( -)? (.+)/i, msg do
     imgs = search_images(msg.matches[2])

@@ -27,4 +27,18 @@ defmodule HedwigGoogleImages.MixProject do
       {:runtime_config, "~> 0.1.0"},
     ]
   end
+
+  defp description do
+    """
+    Hedwig Google Images Responder
+    """
+  end
+  defp package do
+    [
+      files: ["lib", "mix.exs", "README*", "LICENSE*"],
+      maintainers: ["Ernesto Acevedo"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/ernestoacevedo/hedwig_google_images"}
+    ]
+  end
 end
