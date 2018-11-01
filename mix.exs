@@ -41,7 +41,7 @@ defmodule HedwigGoogleImages.MixProject do
 
   defp package do
     [
-      files: ["lib", "mix.exs", "README*", "LICENSE*"],
+      files: ["lib", "mix.exs", "README*"],
       maintainers: ["Ernesto Acevedo"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/ernestoacevedo/hedwig_google_images"}
