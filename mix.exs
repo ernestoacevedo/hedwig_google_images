@@ -7,7 +7,11 @@ defmodule HedwigGoogleImages.MixProject do
       version: "0.1.0",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      description: description(),
+      package: package(),
+      source_url: "https://github.com/ernestoacevedo/hedwig_google_images",
+      name: "Hedwig Google Images",
     ]
   end
 
@@ -34,6 +38,7 @@ defmodule HedwigGoogleImages.MixProject do
     Hedwig Google Images Responder
     """
   end
+
   defp package do
     [
       files: ["lib", "mix.exs", "README*", "LICENSE*"],
